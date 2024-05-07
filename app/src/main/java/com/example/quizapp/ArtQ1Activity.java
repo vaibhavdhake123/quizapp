@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+//Test commit
 public class ArtQ1Activity extends AppCompatActivity {
 
     private TextView timerTextView, numIndicator, questionTextView;
