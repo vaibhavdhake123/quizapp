@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.quizapp"
+    namespace = "com.learningkids.quizapp"
     compileSdk = 34
 
 
     defaultConfig {
-        applicationId = "com.example.quizapp"
+        applicationId = "com.learningkids.quizapp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -46,6 +46,6 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.23")
-
+    implementation("com.airbnb.android:lottie:6.4.0")
     implementation("de.hdodenhof:circleimageview:3.1.0")
 }

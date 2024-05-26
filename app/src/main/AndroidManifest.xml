@@ -41,13 +41,13 @@
             android:name=".ArtQ1Activity"
             android:exported="false" />
         <activity
-            android:name=".MathQ4Activity"
+            android:name=".EnvQ4Activity"
             android:exported="false" />
         <activity
-            android:name=".MathQ3Activity"
+            android:name=".EnvQ3Activity"
             android:exported="false" />
         <activity
-            android:name=".MathQ2Activity"
+            android:name=".EnvQ2Activity"
             android:exported="false" />
         <activity
             android:name=".GkQ4Activity"
@@ -68,7 +68,7 @@
             android:name=".EnglishQ2Activity"
             android:exported="false" />
         <activity
-            android:name=".MathQ1Activity"
+            android:name=".EnvQ1Activity"
             android:exported="false" />
         <activity
             android:name=".GkQ1Activity"
@@ -92,13 +92,18 @@
             android:name=".FirstClassActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:name=".SplashScreen"
+            android:exported="false" >
+        </activity>
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
     </application>

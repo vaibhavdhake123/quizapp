@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/Eng3"
@@ -37,7 +37,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="125dp"
-            android:src="@drawable/english" />
+            android:src="@drawable/englishicon"/>
 
         <TextView
             android:layout_width="100dp"
@@ -48,7 +48,7 @@
             android:text="English"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
 
     </androidx.cardview.widget.CardView>
@@ -69,7 +69,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="125dp"
-            android:src="@drawable/envorment" />
+            android:src="@drawable/en"/>
 
         <TextView
             android:layout_width="100dp"
@@ -80,7 +80,7 @@
             android:text="Enviroment"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
 
     </androidx.cardview.widget.CardView>
@@ -100,7 +100,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="125dp"
-            android:src="@drawable/gk" />
+            android:src="@drawable/gk"/>
 
         <TextView
             android:layout_width="100dp"
@@ -111,7 +111,7 @@
             android:text="Gk"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
 
     </androidx.cardview.widget.CardView>
@@ -131,7 +131,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="125dp"
-            android:src="@drawable/art" />
+            android:src="@drawable/art"/>
 
         <TextView
             android:layout_width="100dp"
@@ -142,7 +142,7 @@
             android:text="Art"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
 
     </androidx.cardview.widget.CardView>
@@ -163,7 +163,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="125dp"
-            android:src="@drawable/sport" />
+            android:src="@drawable/sport"/>
 
         <TextView
             android:layout_width="100dp"
@@ -174,7 +174,7 @@
             android:text="Sport"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
 
     </androidx.cardview.widget.CardView>
@@ -204,7 +204,7 @@
         android:layout_marginTop="28dp"
         android:src="@drawable/imgd"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:layout_width="159dp"
@@ -213,6 +213,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
