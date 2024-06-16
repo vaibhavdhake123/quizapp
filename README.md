@@ -3,14 +3,17 @@ This is an educational Android application designed to provide a fun and interac
 
 Features
 
-Subject-Specific Quizzes: Different quizzes for subjects including English, Environment, General Knowledge, and Art.
-Grade-Specific Content: Tailored quiz questions for students from grade 1 to grade 4.
-Real-time Database: Use of Firebase Realtime Database to store and retrieve quiz questions and user scores.
-Score Tracking: Keep track of user scores and progress over time.
-Interactive UI: Engaging and user-friendly interface designed for young students.
-Randomized Questions: Each quiz session presents a new set of randomized questions to ensure a varied learning experience.
-Installation
-Clone the repository
+Subject-Specific Quizzes : Different quizzes for subjects including English, Environment, General Knowledge, and Art.
+
+Grade-Specific Content : Tailored quiz questions for students from grade 1 to grade 4.
+
+Real-time Database : Use of Firebase Realtime Database to store and retrieve quiz questions and user scores.
+
+Score Tracking : Keep track of user scores and progress over time.
+
+Interactive UI : Engaging and user-friendly interface designed for young students.
+
+Randomized Questions : Each quiz session presents a new set of randomized questions to ensure a varied learning experience.
 
 
 Open Android Studio.
@@ -33,10 +36,12 @@ Answer Questions: Answer the quiz questions. Each quiz will consist of a set num
 View Scores: After completing the quiz, view your score and track your progress over time.
 Contributing
 Fork the repository.
+
 Create your feature branch (git checkout -b feature/YourFeature).
 Commit your changes (git commit -m 'Add some feature').
 Push to the branch (git push origin feature/YourFeature).
 Open a pull request.
+
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
