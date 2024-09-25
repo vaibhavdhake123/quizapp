@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "747475690004",
+    "project_id": "quiz-apps-92040",
+    "storage_bucket": "quiz-apps-92040.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747475690004:android:76390e655543e844ed3d01",
+        "android_client_info": {
+          "package_name": "com.learningkids.quizapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdISPhRYVNd2x77d8_IDQVhKtOQJLhkv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
