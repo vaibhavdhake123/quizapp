@@ -12,7 +12,7 @@ import androidx.core.content.ContextCompat;
 
 public class FirstClassActivity extends AppCompatActivity {
 
-    private CardView cardEng1, cardMath1, cardGk1 , card14, card15;
+    private CardView cardEng1, cardEvn1, cardGk1 , cardArt1;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -20,11 +20,11 @@ public class FirstClassActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_class);
 
-       cardEng1 = findViewById(R.id.Eng1);
-       cardMath1 = findViewById(R.id.Math1);
-       cardGk1 = findViewById(R.id.Gk1);
-       card14 = findViewById(R.id.card14);
-       card15 = findViewById(R.id.card15);
+        cardEng1 = findViewById(R.id.Eng1);
+        cardEvn1 = findViewById(R.id.Evn1);
+        cardGk1 = findViewById(R.id.Gk1);
+        cardArt1 = findViewById(R.id.Art1);
+
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.question));
@@ -38,7 +38,7 @@ public class FirstClassActivity extends AppCompatActivity {
             }
         });
 
-        cardMath1.setOnClickListener(new View.OnClickListener() {
+        cardEvn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent Math1intent = new Intent(FirstClassActivity.this, EnvQ1Activity.class);
@@ -54,7 +54,7 @@ public class FirstClassActivity extends AppCompatActivity {
             }
         });
 
-        card14.setOnClickListener(new View.OnClickListener() {
+        cardArt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent card14in = new Intent(FirstClassActivity.this, ArtQ1Activity.class);
@@ -62,12 +62,5 @@ public class FirstClassActivity extends AppCompatActivity {
             }
         });
 
-        card15.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent card15in = new Intent(FirstClassActivity.this, SportQ1Activity.class);
-                startActivity(card15in);
-            }
-        });
-    }
-}
+
+    }}

@@ -6,6 +6,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -53,7 +55,6 @@ public class GkQ4Activity extends AppCompatActivity {
 
 
         FirebaseApp.initializeApp(this);
-
 
         timerTextView = findViewById(R.id.timer);
         numIndicator = findViewById(R.id.numindicator);
@@ -153,11 +154,15 @@ public class GkQ4Activity extends AppCompatActivity {
     }
 
     private void setupOptionListeners() {
+        final Animation scaleAnimation = AnimationUtils.loadAnimation(this, R.anim.scale);
+
         View.OnClickListener optionClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Button clickedButton = (Button) v;
+                clickedButton.startAnimation(scaleAnimation);
                 checkAnswer(clickedButton.getText().toString());
+
             }
         };
 
@@ -207,15 +212,23 @@ public class GkQ4Activity extends AppCompatActivity {
             Question currentQuestion = questions.get(index);
 
             questionTextView.setText(currentQuestion.getQuestion());
-            option1.setText(currentQuestion.getOption1());
-            option2.setText(currentQuestion.getOption2());
-            option3.setText(currentQuestion.getOption3());
-            option4.setText(currentQuestion.getOption4());
+            List<String> options = new ArrayList<>();
+            options.add(currentQuestion.getOption1());
+            options.add(currentQuestion.getOption2());
+            options.add(currentQuestion.getOption3());
+            options.add(currentQuestion.getOption4());
+            Collections.shuffle(options);
+
+            option1.setText(options.get(0));
+            option2.setText(options.get(1));
+            option3.setText(options.get(2));
+            option4.setText(options.get(3));
 
             numIndicator.setText((index + 1) + "/" + questions.size());
 
             if (countDownTimer != null) {
                 countDownTimer.cancel();
+
             }
             startTimer();
         } else {

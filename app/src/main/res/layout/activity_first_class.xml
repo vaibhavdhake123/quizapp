@@ -19,181 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.995" />
 
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/Eng1"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="100dp"
-        android:backgroundTint="@color/white"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/Gk1"
-        app:layout_constraintEnd_toStartOf="@+id/Math1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="125dp"
-            android:src="@drawable/englishicon"/>
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="25dp"
-            android:layout_gravity="bottom|center"
-            android:fontFamily="@font/timesbold"
-            android:gravity="center"
-            android:text="English"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-
-    </androidx.cardview.widget.CardView>
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/Math1"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="100dp"
-        android:backgroundTint="@color/white"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/card14"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Eng1"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="125dp"
-            android:src="@drawable/en"/>
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="25dp"
-            android:layout_gravity="bottom|center"
-            android:fontFamily="@font/timesbold"
-            android:gravity="center"
-            android:text="Environment"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:textStyle="bold"/>
-
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/Gk1"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:backgroundTint="@color/white"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/card15"
-        app:layout_constraintEnd_toStartOf="@+id/card14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Eng1">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="125dp"
-            android:src="@drawable/gk"/>
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="25dp"
-            android:layout_gravity="bottom|center"
-            android:fontFamily="@font/timesbold"
-            android:gravity="center"
-            android:text="Gk"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card14"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:backgroundTint="@color/white"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/card16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Gk1"
-        app:layout_constraintTop_toBottomOf="@+id/Math1">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="125dp"
-            android:src="@drawable/art"/>
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="25dp"
-            android:layout_gravity="bottom|center"
-            android:fontFamily="@font/timesbold"
-            android:gravity="center"
-            android:text="Art"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card15"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="100dp"
-        android:backgroundTint="@color/white"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/card16"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Gk1">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="125dp"
-            android:src="@drawable/sport"/>
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="25dp"
-            android:layout_gravity="bottom|center"
-            android:fontFamily="@font/timesbold"
-            android:gravity="center"
-            android:text="Sport"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card16"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="100dp"
-        android:visibility="invisible"
-        android:backgroundTint="@color/white"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/card15"
-        app:layout_constraintTop_toBottomOf="@+id/card14">
-
-
-    </androidx.cardview.widget.CardView>
-
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="175dp"
@@ -212,6 +37,143 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
         app:layout_constraintVertical_bias="0.0"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Eng1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/Gk1"
+            app:layout_constraintEnd_toStartOf="@+id/Evn1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:src="@drawable/englishicon"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="@font/timesbold"
+                android:gravity="center"
+                android:text="English"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Evn1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/Art1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Eng1"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:src="@drawable/en"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="@font/timesbold"
+                android:gravity="center"
+                android:text="Environment"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Gk1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Art1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Eng1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:src="@drawable/gk"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="@font/timesbold"
+                android:gravity="center"
+                android:text="Gk"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Art1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Gk1"
+            app:layout_constraintTop_toBottomOf="@+id/Evn1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:src="@drawable/art"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="@font/timesbold"
+                android:gravity="center"
+                android:text="Art"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

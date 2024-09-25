@@ -12,7 +12,7 @@ import androidx.core.content.ContextCompat;
 
 public class SecondClassActivity extends AppCompatActivity {
 
-   private CardView cardEng2, cardMath2, cardGk2, card24, card25;
+   private CardView cardEng2, cardEvn2, cardGk2, cardArt2;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -25,10 +25,10 @@ public class SecondClassActivity extends AppCompatActivity {
         }
 
         cardEng2 = findViewById(R.id.Eng2);
-        cardMath2 = findViewById(R.id.Math2);
+        cardEvn2 = findViewById(R.id.Evn2);
         cardGk2 = findViewById(R.id.Gk2);
-        card24 = findViewById(R.id.card24);
-        card25 = findViewById(R.id.card25);
+        cardArt2 = findViewById(R.id.Art2);
+
 
 
 
@@ -40,7 +40,7 @@ public class SecondClassActivity extends AppCompatActivity {
             }
         });
 
-        cardMath2.setOnClickListener(new View.OnClickListener() {
+        cardEvn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent Math2intent = new Intent(SecondClassActivity.this, EnvQ2Activity.class);
@@ -56,7 +56,7 @@ public class SecondClassActivity extends AppCompatActivity {
             }
         });
 
-        card24.setOnClickListener(new View.OnClickListener() {
+        cardArt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent card24intent = new Intent(SecondClassActivity.this, ArtQ2Activity.class);
@@ -64,12 +64,6 @@ public class SecondClassActivity extends AppCompatActivity {
             }
         });
 
-        card25.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent card25intent = new Intent(SecondClassActivity.this, SportQ2Activity.class);
-                startActivity(card25intent);
-            }
-        });
+
     }
 }

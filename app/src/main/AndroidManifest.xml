@@ -17,25 +17,13 @@
 
 
         <activity
-            android:name=".SportQ4Activity"
-            android:exported="false" />
-        <activity
             android:name=".ArtQ4Activity"
-            android:exported="false" />
-        <activity
-            android:name=".SportQ3Activity"
             android:exported="false" />
         <activity
             android:name=".ArtQ3Activity"
             android:exported="false" />
         <activity
-            android:name=".SportQ2Activity"
-            android:exported="false" />
-        <activity
             android:name=".ArtQ2Activity"
-            android:exported="false" />
-        <activity
-            android:name=".SportQ1Activity"
             android:exported="false" />
         <activity
             android:name=".ArtQ1Activity"

@@ -11,7 +11,7 @@ import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
 public class ThirdActivity extends AppCompatActivity {
-    private CardView cardEng3, cardMath3, cardGk3, card34, card35;
+    private CardView cardEng3, cardEvn3, cardGk3, cardArt3;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -24,10 +24,10 @@ public class ThirdActivity extends AppCompatActivity {
         }
 
         cardEng3 = findViewById(R.id.Eng3);
-        cardMath3 = findViewById(R.id.Math3);
+        cardEvn3 = findViewById(R.id.Evn3);
         cardGk3 =findViewById(R.id.Gk3);
-        card34 = findViewById(R.id.card34);
-        card35 = findViewById(R.id.card35);
+        cardArt3 = findViewById(R.id.Art3);
+
 
         cardEng3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,7 +37,7 @@ public class ThirdActivity extends AppCompatActivity {
             }
         });
 
-        cardMath3.setOnClickListener(new View.OnClickListener() {
+        cardEvn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent Math3intent = new Intent(ThirdActivity.this, EnvQ3Activity.class);
@@ -53,7 +53,7 @@ public class ThirdActivity extends AppCompatActivity {
             }
         });
 
-        card34.setOnClickListener(new View.OnClickListener() {
+        cardArt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent card34intent = new Intent(ThirdActivity.this, ArtQ3Activity.class);
@@ -61,12 +61,6 @@ public class ThirdActivity extends AppCompatActivity {
             }
         });
 
-        card35.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent card35intent = new Intent(ThirdActivity.this, SportQ3Activity.class);
-                startActivity(card35intent);
-            }
-        });
+
     }
 }

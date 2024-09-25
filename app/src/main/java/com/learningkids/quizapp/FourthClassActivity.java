@@ -13,7 +13,7 @@ import androidx.core.content.ContextCompat;
 public class FourthClassActivity extends AppCompatActivity {
 
 
-    private CardView cardEng4, cardMath4, cardGk4, card44, card45;
+    private CardView cardEng4, cardEvn4, cardGk4, cardArt4;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -26,10 +26,10 @@ public class FourthClassActivity extends AppCompatActivity {
         }
 
         cardEng4 = findViewById(R.id.Eng4);
-        cardMath4 = findViewById(R.id.Math4);
+        cardEvn4 = findViewById(R.id.Evn4);
         cardGk4 = findViewById(R.id.Gk4);
-        card44 = findViewById(R.id.card44);
-        card45 = findViewById(R.id.card45);
+        cardArt4 = findViewById(R.id.Art4);
+
 
 
         cardEng4.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +40,7 @@ public class FourthClassActivity extends AppCompatActivity {
             }
         });
 
-        cardMath4.setOnClickListener(new View.OnClickListener() {
+        cardEvn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent Math4intent = new Intent(FourthClassActivity.this, EnvQ4Activity.class);
@@ -56,7 +56,7 @@ public class FourthClassActivity extends AppCompatActivity {
             }
         });
 
-        card44.setOnClickListener(new View.OnClickListener() {
+        cardArt4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent card44intent = new Intent(FourthClassActivity.this, ArtQ4Activity.class);
@@ -64,13 +64,7 @@ public class FourthClassActivity extends AppCompatActivity {
             }
         });
 
-        card45.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent card45intent = new Intent(FourthClassActivity.this, SportQ4Activity.class);
-                startActivity(card45intent);
-            }
-        });
+
 
     }
 }
