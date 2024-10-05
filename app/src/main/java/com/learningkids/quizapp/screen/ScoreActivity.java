@@ -1,4 +1,4 @@
-package com.learningkids.quizapp;
+package com.learningkids.quizapp.screen;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -10,6 +10,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+
+import com.learningkids.quizapp.MainActivity;
+import com.learningkids.quizapp.R;
 
 public class ScoreActivity extends AppCompatActivity {
 
@@ -38,7 +41,7 @@ public class ScoreActivity extends AppCompatActivity {
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent HomeIntent = new Intent(ScoreActivity.this,MainActivity.class);
+                Intent HomeIntent = new Intent(ScoreActivity.this, MainActivity.class);
                 startActivity(HomeIntent);
             }
         });

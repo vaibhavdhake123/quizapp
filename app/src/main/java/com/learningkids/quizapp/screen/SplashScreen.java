@@ -1,4 +1,4 @@
-package com.learningkids.quizapp;
+package com.learningkids.quizapp.screen;
 
 import android.content.Intent;
 import android.os.Build;
@@ -7,6 +7,8 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+
+import com.learningkids.quizapp.R;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -22,7 +24,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                Intent intent = new Intent(SplashScreen.this, HomeActivity.class);
                 startActivity(intent);
                 finish();
             }

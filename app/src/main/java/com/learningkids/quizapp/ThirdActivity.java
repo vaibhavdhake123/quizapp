@@ -10,6 +10,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
+import com.learningkids.quizapp.test.ArtQ3Activity;
+import com.learningkids.quizapp.test.EnglishQ3Activity;
+import com.learningkids.quizapp.test.EnvQ3Activity;
+import com.learningkids.quizapp.test.GkQ3Activity;
+
 public class ThirdActivity extends AppCompatActivity {
     private CardView cardEng3, cardEvn3, cardGk3, cardArt3;
 

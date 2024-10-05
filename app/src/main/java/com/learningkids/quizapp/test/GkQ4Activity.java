@@ -1,4 +1,4 @@
-package com.learningkids.quizapp;
+package com.learningkids.quizapp.test;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -23,6 +23,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.learningkids.quizapp.helper.Question;
+import com.learningkids.quizapp.R;
+import com.learningkids.quizapp.screen.ScoreActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;
