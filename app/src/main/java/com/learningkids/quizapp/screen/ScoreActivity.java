@@ -11,7 +11,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-import com.learningkids.quizapp.MainActivity;
 import com.learningkids.quizapp.R;
 
 public class ScoreActivity extends AppCompatActivity {
@@ -28,7 +27,7 @@ public class ScoreActivity extends AppCompatActivity {
         setContentView(R.layout.activity_score);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.question));
+            getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.primary));
         }
 
 
@@ -41,7 +40,7 @@ public class ScoreActivity extends AppCompatActivity {
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent HomeIntent = new Intent(ScoreActivity.this, MainActivity.class);
+                Intent HomeIntent = new Intent(ScoreActivity.this, HomeActivity.class);
                 startActivity(HomeIntent);
             }
         });
@@ -60,7 +59,7 @@ public class ScoreActivity extends AppCompatActivity {
 
             Rimg.setImageResource(R.drawable.best);
 
-        } else if(score >=4){
+        } else if(score >=5){
 
             Rimg.setImageResource(R.drawable.trophy);
 

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary"
-    tools:context=".screen.SelectScreen">
+    tools:context=".selecter.SelectScreenEnglish">
 
 
     <ImageView
@@ -55,11 +55,11 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/normal"
         android:layout_width="0dp"
         android:layout_height="65dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:src="@drawable/btn2"
         app:layout_constraintEnd_toEndOf="@+id/imageView7"
@@ -67,16 +67,16 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/medium"
         android:layout_width="0dp"
         android:layout_height="65dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:src="@drawable/btn2"
         app:layout_constraintEnd_toEndOf="@+id/imageView7"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        app:layout_constraintTop_toBottomOf="@+id/normal" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -91,16 +91,16 @@
         app:srcCompat="@drawable/kid" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/hard"
         android:layout_width="0dp"
         android:layout_height="65dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:src="@drawable/btn2"
         app:layout_constraintEnd_toEndOf="@+id/imageView7"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/medium" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -109,10 +109,10 @@
         android:textColor="#000000"
         android:textSize="24dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-        app:layout_constraintEnd_toEndOf="@+id/imageView10"
-        app:layout_constraintStart_toStartOf="@+id/imageView10"
-        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+        app:layout_constraintBottom_toBottomOf="@+id/normal"
+        app:layout_constraintEnd_toEndOf="@+id/normal"
+        app:layout_constraintStart_toStartOf="@+id/normal"
+        app:layout_constraintTop_toTopOf="@+id/normal" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -121,10 +121,10 @@
         android:textColor="#000000"
         android:textSize="24dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-        app:layout_constraintEnd_toEndOf="@+id/imageView8"
-        app:layout_constraintStart_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+        app:layout_constraintBottom_toBottomOf="@+id/medium"
+        app:layout_constraintEnd_toEndOf="@+id/medium"
+        app:layout_constraintStart_toStartOf="@+id/medium"
+        app:layout_constraintTop_toTopOf="@+id/medium" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -133,11 +133,11 @@
         android:textColor="#000000"
         android:textSize="24dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
-        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintBottom_toBottomOf="@+id/hard"
+        app:layout_constraintEnd_toEndOf="@+id/hard"
         app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+        app:layout_constraintStart_toStartOf="@+id/hard"
+        app:layout_constraintTop_toTopOf="@+id/hard" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

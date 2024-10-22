@@ -15,7 +15,16 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".screen.SelectScreen"
+            android:name=".filpgame.FlipGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bordgame.BoardGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.StoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".selecter.SelectScreen"
             android:exported="false" />
         <activity
             android:name=".screen.HomeActivity"
@@ -29,67 +38,43 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".test.ArtQ4Activity"
+            android:name=".test.ArtHardActivity"
             android:exported="false" />
         <activity
-            android:name=".test.ArtQ3Activity"
+            android:name=".test.ArtMediumActivity"
             android:exported="false" />
         <activity
-            android:name=".test.ArtQ2Activity"
+            android:name=".test.ArtNormalActivity"
             android:exported="false" />
         <activity
-            android:name=".test.ArtQ1Activity"
+            android:name=".test.EnvHardActivity"
             android:exported="false" />
         <activity
-            android:name=".test.EnvQ4Activity"
+            android:name=".test.EnvMediumActivity"
             android:exported="false" />
         <activity
-            android:name=".test.EnvQ3Activity"
+            android:name=".test.GkHardActivity"
             android:exported="false" />
         <activity
-            android:name=".test.EnvQ2Activity"
+            android:name=".test.GkMediumActivity"
             android:exported="false" />
         <activity
-            android:name=".test.GkQ4Activity"
+            android:name=".test.EnglishHardActivity"
             android:exported="false" />
         <activity
-            android:name=".test.GkQ3Activity"
+            android:name=".test.EnglishMediumActivity"
             android:exported="false" />
         <activity
-            android:name=".test.GkQ2Activity"
+            android:name=".test.EnvNormalActivity"
             android:exported="false" />
         <activity
-            android:name=".test.EnglishQ4Activity"
-            android:exported="false" />
-        <activity
-            android:name=".test.EnglishQ3Activity"
-            android:exported="false" />
-        <activity
-            android:name=".test.EnglishQ2Activity"
-            android:exported="false" />
-        <activity
-            android:name=".test.EnvQ1Activity"
-            android:exported="false" />
-        <activity
-            android:name=".test.GkQ1Activity"
+            android:name=".test.GkNormalActivity"
             android:exported="false" />
         <activity
             android:name=".screen.ScoreActivity"
             android:exported="false" />
         <activity
-            android:name=".test.EnglishQ1Activity"
-            android:exported="false" />
-        <activity
-            android:name=".FourthClassActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ThirdActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SecondClassActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FirstClassActivity"
+            android:name=".test.EnglishNormalActivity"
             android:exported="false" />
         <activity
             android:name=".screen.SplashScreen"
@@ -99,17 +84,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
         </activity>
     </application>
 

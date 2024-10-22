@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#6563FF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".filpgame.FlipGameActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Memory Card Game"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- GridLayout for the Cards -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:layout_gravity="center"
+        android:background="#F8F8F8"
+        android:elevation="4dp"
+        android:layout_marginTop="10dp">
+    </GridLayout>
+
+
+
+</LinearLayout>

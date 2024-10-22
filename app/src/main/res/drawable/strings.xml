@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Story Book</string>
+
+<!--    <string name="title1">The Hare and the Tortoise</string>-->
+<!--    <string name="title2">The Dog and the Bone</string>-->
+<!--    <string name="title3">The Thirsty Crow</string>-->
+<!--    <string name="title4">Lazy John</string>-->
+<!--    <string name="title5">The Fox and The Grapes</string>-->
+<!--    <string name="title6">The Ant and The Grasshopper</string>-->
+<!--    <string name="title7">The Boy Who Cried Wolf</string>-->
+<!--    <string name="title8">The Ugly Duckling</string>-->
+<!--    <string name="title9">The Lion and the Poor Slave</string>-->
+<!--    <string name="title10">The Elephant and the Ants</string>-->
+<!--    <string name="story1">There was once a hare who was friends with a tortoise. One day, he challenged the tortoise to a race. Seeing how slow the tortoise was going, the hare thought he’ll win this easily. So he took a nap while the tortoise kept on going. When the hare woke up, he saw that the tortoise was already at the finish line. Much to his chagrin, the tortoise won the race while he was busy sleeping.</string>-->
+<!--    <string name="story2">Once there was a dog who wandered the streets night and day in search of food. One day, he found a big juicy bone and he immediately grabbed it between his mouth and took it home. On his way home, he crossed a river and saw another dog who also had a bone in its mouth. He wanted that bone for himself too. But as he opened his mouth, the bone he was biting fell into the river and sank. That night, he went home hungry.</string>-->
+<!--    <string name="story3">After flying a long distance, a thirsty crow was wandering the forest in search of water. Finally, he saw a pot half-filled with water. He tried to drink from it but his beak wasn’t long enough to reach the water inside. He then saw pebbles on the ground and one by one, he put them in the pot until the water rose to the brim. The crow then hastily drank from it and quenched his thirst.</string>-->
+<!--    <string name="story4">There was a boy named John who was so lazy, he couldn’t even bother to change his clothes. One day, he saw that the apple tree in their yard was full of fruits. He wanted to eat some apples but he was too lazy to climb the tree and take the fruits. So he lay down underneath the tree and waited for the fruits to fall off. John waited and waited until he was very hungry but the apples never fell.</string>-->
+<!--    <string name="story5">Once there was a hungry fox who stumbled upon a vineyard. After seeing the round, juicy grapes hanging in a bunch, the fox drooled. But no matter how high he jumped, he couldn’t reach for it. So he told himself that it was probably sour and left. That night, he had to sleep on an empty stomach.</string>-->
+<!--    <string name="story6">The ant and the grasshopper were good friends. In the summer, the ant works hard to fill his storage with food. While the grasshopper was enjoying the fine weather and playing all day. When winter came, the ant was lying cozily in his home surrounded by the food he stored during the summer. While the grasshopper was in his home, hungry and freezing. He asked the ant for food and the ant gave him some. But it wasn’t enough to last the entire winter. When he tried to ask the ant again, the latter replied: “I’m sorry my friend but my food is just enough for my family to last until the end of winter. If I give you more, we too will starve. We had the entire summer to prepare for the winter but you chose to play instead.”</string>-->
+<!--    <string name="story7">There was once a shepherd boy who liked to play tricks. One day, while he was watching over the herd, the boy decided to play a trick and cried “wolf! wolf!”. The people who heard rushed over to help him. But they were disappointed when they saw that there was no wolf and the boy was laughing at them. The next day, he did it again and people rushed to his aid only to be disappointed once again. On the third day, the boy saw a wolf devouring one of his sheep and cried for help. But the people who heard him thought this is just another of the boy’s pranks so no one came to help him. That day, the boy lost some of his sheep to the wolf.</string>-->
+<!--    <string name="story8">Most of us have probably heard of this story as this is one of the most popular fairy tales in the world. The story revolves around a duckling who from the moment of his birth has always felt different from his siblings. He was always picked on because he didn’t look like the rest of them. One day, he had enough and ran away from the pond he grew up in. He wandered near and far looking for a family who would accept him. Months passed and seasons changed but everywhere he went, nobody wanted him because he was such an ugly duck. Then one day, he came upon a family of swans. Upon looking at them, he realized that during the months he spent looking for a family to call his own, he had grown into a beautiful swan. Now he finally understood why he never looked like the rest of his siblings because he isn’t a duck but a swan.</string>-->
+<!--    <string name="story9">There was once a slave who was treated cruelly by his master. One day, he couldn’t take it anymore and ran away to the forest to escape. There he chanced upon a lion who couldn’t walk because of the thorn in its paw. Although he’s scared, the slave mustered his courage and took out the thorn in the lion’s paw. When the lion was finally free of the thorn, he ran into the forest and didn’t harm the slave. Sometime later, the slave was caught by his master along with some animals in the forest. The master then ordered the slave to be thrown into the lion’s den. When the slave saw the lion, he recognized it as the same lion he helped in the forest. The slave was able to escape the den unharmed and he freed all the other animals.</string>-->
+<!--    <string name="story10">There was once a proud elephant who always bullied smaller animals. He would go to the anthill near his home and spray water at the ants. The ants, with their size, could do nothing but cry. The elephant just laughed and threatened the ants that he would crush them to death. One day, the ants had enough and decided to teach the elephant a lesson. They went straight into the elephant’s trunk and started biting him. The elephant could only howl in pain. He realized his mistake and apologized to the ants and all the animals he bullied.</string>-->
+<!--    <string name="moral1">There are actually a couple of moral lessons we can learn from this story. The hare teaches that overconfidence can sometimes ruin you. While the tortoise teaches us about the power of perseverance. Even if all the odds are stacked against you, never give up. Sometimes life is not about who’s the fastest or the strongest, it’s about who is the most consistent.</string>-->
+<!--    <string name="moral2">If we always envy what others have, we’ll end up losing what we already have, just like the greedy dog.</string>-->
+<!--    <string name="moral3">If there’s a will, there’s a way. Every problem has a solution if we just look hard enough and don’t give up.</string>-->
+<!--    <string name="moral4">Laziness can get you nowhere. If you want something, you need to work hard for it.</string>-->
+<!--    <string name="moral5">Most of us have the tendency to act like the fox. When we want something but think it’s too hard to attain, we make up excuses. We tell ourselves that it’s probably not that great instead of working hard for it.</string>-->
+<!--    <string name="moral6">Winter, in this story, represents a time in our life where food and resources are scarce. While summer is that time where everything is abundant. So if you have a lot right now, save some of it for the winter.</string>-->
+<!--    <string name="moral7">If you always lie and cheat on other people, there will come a time when no one will believe you anymore.</string>-->
+<!--    <string name="moral8">We shouldn’t be too quick to judge others based on their physical appearance. Just because someone doesn’t fit societal definitions of beauty doesn’t mean they’re ugly. Each of us is beautiful in our own unique way and it’s time we accept and celebrate that individuality.</string>-->
+<!--    <string name="moral9">The good you did will always have a way of coming back to you. So do good deeds and be kind to others and the world will be kind to you.</string>-->
+<!--    <string name="moral10">Be humble and treat everyone with kindness. If you think you’re stronger than others, then use your strength to protect them instead of harming them.</string>-->
+
+
+    <string name="title1">खरगोश और कछुआ</string>
+    <string name="title2">कुत्ता और हड्डी</string>
+    <string name="title3">प्यासा कौआ</string>
+    <string name="title4">आलसी जॉन</string>
+    <string name="title5">लोमड़ी और अंगूर</string>
+    <string name="title6">चींटी और टिड्डा</string>
+    <string name="title7">लड़का जिसने भेड़िया पुकारा</string>
+    <string name="title8">कुरूप बत्तख का बच्चा</string>
+    <string name="title9">शेर और गरीब गुलाम</string>
+    <string name="title10">हाथी और चींटियाँ</string>
+    <string name="story1">एक बार एक खरगोश और एक कछुआ दोस्त थे। एक दिन, खरगोश ने कछुए को दौड़ की चुनौती दी। कछुए को धीमा देखकर, खरगोश ने सोचा कि वह आसानी से जीत जाएगा। इसलिए उसने एक झपकी ली जबकि कछुआ धीरे-धीरे चलता रहा। जब खरगोश जागा, तो उसने देखा कि कछुआ पहले ही फिनिश लाइन पर पहुंच गया है। खरगोश को बहुत अफ़सोस हुआ और कछुआ दौड़ जीत गया जबकि खरगोश सो रहा था।</string>
+    <string name="story2">एक बार एक कुत्ता था जो रात-दिन सड़कों पर खाने की तलाश में भटकता था। एक दिन, उसे एक बड़ी रसदार हड्डी मिली और उसने तुरंत उसे मुंह में पकड़ लिया और घर ले जाने लगा। घर जाते समय, उसने एक नदी पार की और एक अन्य कुत्ते को देखा जिसके मुंह में भी हड्डी थी। उसने उस हड्डी को भी अपने लिए चाहा। लेकिन जैसे ही उसने अपना मुंह खोला, उसके मुंह में पकड़ी हुई हड्डी नदी में गिर गई और डूब गई। उस रात, वह भूखा घर लौटा।</string>
+    <string name="story3">लंबी दूरी उड़ने के बाद, एक प्यासा कौआ जंगल में पानी की तलाश में भटक रहा था। अंत में, उसने आधे भरे पानी का एक मटका देखा। उसने उससे पानी पीने की कोशिश की, लेकिन उसकी चोंच अंदर तक नहीं पहुँच पाई। उसने फिर जमीन पर कंकड़ देखे और एक-एक करके उन्हें मटके में डाल दिया जब तक कि पानी ऊपर नहीं आ गया। कौए ने जल्दी से पानी पिया और अपनी प्यास बुझाई।</string>
+    <string name="story4">एक लड़का था जिसका नाम जॉन था, वह इतना आलसी था कि वह अपने कपड़े भी नहीं बदल सकता था। एक दिन, उसने देखा कि उनके बगीचे का सेब का पेड़ फलों से भरा हुआ था। उसने कुछ सेब खाने की चाहत की लेकिन वह पेड़ पर चढ़कर फल तोड़ने में आलसी था। इसलिए वह पेड़ के नीचे लेट गया और फल गिरने का इंतजार करने लगा। जॉन ने बहुत इंतजार किया, लेकिन सेब कभी नहीं गिरे।</string>
+    <string name="story5">एक बार एक भूखी लोमड़ी अंगूर के बाग में आ गई। गोल, रसदार अंगूरों को लटकते देखकर लोमड़ी के मुंह में पानी आ गया। लेकिन चाहे वह कितनी भी ऊंची कूदती, वह उन्हें नहीं पा सकी। इसलिए उसने खुद से कहा कि ये अंगूर शायद खट्टे होंगे और वहां से चली गई। उस रात, उसे खाली पेट सोना पड़ा।</string>
+    <string name="story6">चींटी और टिड्डा अच्छे दोस्त थे। गर्मियों में, चींटी मेहनत करके अपने भंडार को भोजन से भरती थी। जबकि टिड्डा पूरे दिन अच्छा मौसम का आनंद लेता और खेलता रहता था। जब सर्दी आई, तो चींटी अपने घर में आराम से बैठी थी, उसके पास गर्मियों में इकट्ठा किया हुआ खाना था। जबकि टिड्डा अपने घर में भूखा और ठंडा था। उसने चींटी से भोजन माँगा और चींटी ने उसे थोड़ा दिया। लेकिन वह पूरे सर्दी भर के लिए पर्याप्त नहीं था। जब उसने फिर से चींटी से माँगा, तो चींटी ने कहा: “मुझे खेद है मेरे दोस्त, लेकिन मेरा भोजन केवल मेरी परिवार के लिए पर्याप्त है। अगर मैं तुम्हें और दूँगा तो हम भी भूखे मर जाएंगे। हमारे पास पूरी गर्मी थी सर्दी की तैयारी के लिए, लेकिन तुमने खेलने का चुनाव किया।”</string>
+    <string name="story7">एक बार एक चरवाहे लड़का था जिसे चाल चलना पसंद था। एक दिन, वह अपने झुंड की निगरानी करते हुए, उसने चाल चली और चिल्लाया "भेड़िया! भेड़िया!"। जो लोग सुनते थे, वे उसकी मदद के लिए दौड़ते थे। लेकिन उन्हें निराशा हुई जब उन्होंने देखा कि वहाँ कोई भेड़िया नहीं था और लड़का उन पर हंस रहा था। अगले दिन, उसने फिर से ऐसा किया और लोग उसकी मदद के लिए दौड़े लेकिन फिर से निराश हुए। तीसरे दिन, लड़के ने देखा कि एक भेड़िया उसकी एक भेड़ को खा रहा है और मदद के लिए चिल्लाया। लेकिन जो लोग उसे सुनते थे, उन्होंने सोचा कि यह लड़के की एक और चाल है, इसलिए कोई उसकी मदद करने नहीं आया। उस दिन, लड़के ने कुछ भेड़ों को भेड़िये के हाथों खो दिया।</string>
+    <string name="story8">हममें से अधिकांश ने शायद इस कहानी को सुना है क्योंकि यह दुनिया की सबसे लोकप्रिय परियों की कहानियों में से एक है। यह कहानी एक बत्तख के बच्चे के इर्द-गिर्द घूमती है, जिसने अपने जन्म से ही अपने भाई-बहनों से अलग महसूस किया। उसे हमेशा तंग किया जाता था क्योंकि वह बाकी की तरह नहीं दिखता था। एक दिन, उसने सहन नहीं किया और अपने तालाब से भाग गया। उसने दूर-दूर तक घूमते हुए अपने लिए एक परिवार की तलाश की। कई महीने बीत गए और मौसम बदला लेकिन जहाँ भी वह गया, किसी ने उसे स्वीकार नहीं किया क्योंकि वह इतना बदसूरत था। फिर एक दिन, उसे हंसों का एक परिवार मिला। उन्हें देखकर, उसने महसूस किया कि महीनों की यात्रा के दौरान, वह एक सुंदर हंस में बदल गया था। अब उसे समझ में आया कि वह अपने भाई-बहनों जैसा क्यों नहीं दिखता था, क्योंकि वह एक बत्तख नहीं बल्कि एक हंस था।</string>
+    <string name="story9">एक बार एक गुलाम था जिसे उसके मालिक ने क्रूरता से व्यवहार किया था। एक दिन, वह इसे और सहन नहीं कर सका और भागकर जंगल में चला गया। वहाँ उसे एक शेर मिला जो अपने पंजे में काँटे के कारण चल नहीं पा रहा था। यद्यपि वह डरता था, गुलाम ने साहस जुटाया और शेर के पंजे से काँटा निकाल दिया। जब शेर आखिरकार काँटे से मुक्त हुआ, तो वह जंगल में भाग गया और गुलाम को नुकसान नहीं पहुँचाया। कुछ समय बाद, गुलाम को उसके मालिक ने पकड़ लिया और कुछ जानवरों के साथ जंगल में। मालिक ने गुलाम को शेर के पिंजरे में फेंकने का आदेश दिया। जब गुलाम ने शेर को देखा, तो उसने उसे उसी शेर के रूप में पहचाना जिसकी उसने जंगल में मदद की थी। गुलाम बिना किसी नुकसान के पिंजरे से भागने में सफल हुआ और उसने सभी जानवरों को भी मुक्त कर दिया।</string>
+    <string name="story10">एक बार एक घमंडी हाथी था जो हमेशा छोटे जानवरों को तंग करता था। वह अपने घर के पास चींटियों के टीले पर जाता था और चींटियों पर पानी छिड़कता था। चींटियाँ, अपनी छोटी सी कद के कारण, कुछ नहीं कर सकती थीं लेकिन रोती थीं। हाथी हँसता और चींटियों को धमकाता कि वह उन्हें कुचल देगा। एक दिन, चींटियों ने तंग आकर हाथी को सबक सिखाने का निर्णय लिया। वे सीधे हाथी की सूंड में घुस गए और उसे काटने लगे। हाथी केवल दर्द में चिल्ला सकता था। उसने अपनी गलती समझी और चींटियों और सभी जानवरों से माफी मांगी जिन्हें उसने तंग किया था।</string>
+    <string name="moral1">इस कहानी से हम वास्तव में कुछ नैतिक शिक्षाएँ सीख सकते हैं। खरगोश सिखाता है कि अतिआत्मविश्वास कभी-कभी आपको बर्बाद कर सकता है। जबकि कछुआ हमें दृढ़ता की शक्ति के बारे में सिखाता है। भले ही आपके खिलाफ सभी बाधाएँ खड़ी हों, कभी हार मत मानो। कभी-कभी जीवन में यह मायने नहीं रखता कि कौन सबसे तेज़ या सबसे मजबूत है, बल्कि यह मायने रखता है कि कौन सबसे अधिक सुसंगत है।</string>
+    <string name="moral2">अगर हम हमेशा दूसरों की चीज़ों से ईर्ष्या करते रहेंगे, तो हम जो पहले से हमारे पास है उसे खो देंगे, जैसे कि लालची कुत्ता।</string>
+    <string name="moral3">अगर इच्छा हो तो रास्ता है। हर समस्या का समाधान है अगर हम बस कड़ी मेहनत करें और हार न मानें।</string>
+    <string name="moral4">आलस्य आपको कहीं नहीं ले जाएगा। अगर आप कुछ चाहते हैं, तो आपको इसके लिए मेहनत करनी पड़ेगी।</string>
+    <string name="moral5">हम में से अधिकांश लोग लोमड़ी की तरह व्यवहार करने की प्रवृत्ति रखते हैं। जब हम कुछ चाहते हैं लेकिन सोचते हैं कि इसे पाना बहुत कठिन है, तो हम बहाने बनाते हैं। हम खुद से कहते हैं कि यह शायद इतना अच्छा नहीं है बजाय इसके लिए मेहनत करने के।</string>
+    <string name="moral6">सर्दी, इस कहानी में, हमारे जीवन का वह समय है जब खाना और संसाधन कम होते हैं। जबकि गर्मी वह समय है जब सब कुछ प्रचुर मात्रा में होता है। इसलिए अगर अभी आपके पास बहुत कुछ है, तो कुछ बचा लें सर्दी के लिए।</string>
+    <string name="moral7">अगर आप हमेशा झूठ बोलते और दूसरों को धोखा देते हैं, तो एक समय आएगा जब कोई भी आप पर विश्वास नहीं करेगा।</string>
+    <string name="moral8">हमें दूसरों को उनके शारीरिक स्वरूप के आधार पर जल्दी से जज नहीं करना चाहिए। सिर्फ इसलिए कि कोई व्यक्ति समाज की सुंदरता की परिभाषा में फिट नहीं बैठता, इसका मतलब यह नहीं है कि वे बदसूरत हैं। हम में से हर कोई अपने अनोखे तरीके से सुंदर है और अब समय आ गया है कि हम उस व्यक्तिगतता को स्वीकार करें और उसका जश्न मनाएँ।</string>
+    <string name="moral9">जो भलाई आप करेंगे वह हमेशा किसी न किसी रूप में आपके पास लौटेगी। इसलिए अच्छे कर्म करें और दूसरों के प्रति दयालु रहें, और दुनिया आपके प्रति दयालु होगी।</string>
+    <string name="moral10">विनम्र रहें और सभी के साथ दया से पेश आएं। अगर आप दूसरों से मजबूत हैं, तो अपनी ताकत का उपयोग उन्हें नुकसान पहुँचाने के बजाय उनकी रक्षा के लिए करें।</string>
+
+
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+</resources>
