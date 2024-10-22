@@ -15,6 +15,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".number.NumberActivity"
+            android:exported="false" />
+        <activity
             android:name=".filpgame.FlipGameActivity"
             android:exported="false" />
         <activity
@@ -24,7 +27,7 @@
             android:name=".screen.StoryActivity"
             android:exported="false" />
         <activity
-            android:name=".selecter.SelectScreen"
+            android:name=".quiz.selecter.SelectScreen"
             android:exported="false" />
         <activity
             android:name=".screen.HomeActivity"
@@ -38,43 +41,43 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".test.ArtHardActivity"
+            android:name=".quiz.test.ArtHardActivity"
             android:exported="false" />
         <activity
-            android:name=".test.ArtMediumActivity"
+            android:name=".quiz.test.ArtMediumActivity"
             android:exported="false" />
         <activity
-            android:name=".test.ArtNormalActivity"
+            android:name=".quiz.test.ArtNormalActivity"
             android:exported="false" />
         <activity
-            android:name=".test.EnvHardActivity"
+            android:name=".quiz.test.EnvHardActivity"
             android:exported="false" />
         <activity
-            android:name=".test.EnvMediumActivity"
+            android:name=".quiz.test.EnvMediumActivity"
             android:exported="false" />
         <activity
-            android:name=".test.GkHardActivity"
+            android:name=".quiz.test.GkHardActivity"
             android:exported="false" />
         <activity
-            android:name=".test.GkMediumActivity"
+            android:name=".quiz.test.GkMediumActivity"
             android:exported="false" />
         <activity
-            android:name=".test.EnglishHardActivity"
+            android:name=".quiz.test.EnglishHardActivity"
             android:exported="false" />
         <activity
-            android:name=".test.EnglishMediumActivity"
+            android:name=".quiz.test.EnglishMediumActivity"
             android:exported="false" />
         <activity
-            android:name=".test.EnvNormalActivity"
+            android:name=".quiz.test.EnvNormalActivity"
             android:exported="false" />
         <activity
-            android:name=".test.GkNormalActivity"
+            android:name=".quiz.test.GkNormalActivity"
             android:exported="false" />
         <activity
             android:name=".screen.ScoreActivity"
             android:exported="false" />
         <activity
-            android:name=".test.EnglishNormalActivity"
+            android:name=".quiz.test.EnglishNormalActivity"
             android:exported="false" />
         <activity
             android:name=".screen.SplashScreen"

@@ -25,6 +25,7 @@ public class StoryActivity extends AppCompatActivity implements TextToSpeech.OnI
     private ActivityStoryBinding binding;
     private int position = 0;
     private ArrayList<Story> storyList;
+
     private String speakableText;
     private boolean isPlaying = false;
 

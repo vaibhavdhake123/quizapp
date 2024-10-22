@@ -1,4 +1,4 @@
-package com.learningkids.quizapp.selecter;
+package com.learningkids.quizapp.quiz.selecter;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,18 +13,18 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.learningkids.quizapp.R;
-import com.learningkids.quizapp.test.ArtHardActivity;
-import com.learningkids.quizapp.test.ArtMediumActivity;
-import com.learningkids.quizapp.test.ArtNormalActivity;
-import com.learningkids.quizapp.test.EnglishHardActivity;
-import com.learningkids.quizapp.test.EnglishMediumActivity;
-import com.learningkids.quizapp.test.EnglishNormalActivity;
-import com.learningkids.quizapp.test.EnvHardActivity;
-import com.learningkids.quizapp.test.EnvMediumActivity;
-import com.learningkids.quizapp.test.EnvNormalActivity;
-import com.learningkids.quizapp.test.GkHardActivity;
-import com.learningkids.quizapp.test.GkMediumActivity;
-import com.learningkids.quizapp.test.GkNormalActivity;
+import com.learningkids.quizapp.quiz.test.ArtHardActivity;
+import com.learningkids.quizapp.quiz.test.ArtMediumActivity;
+import com.learningkids.quizapp.quiz.test.ArtNormalActivity;
+import com.learningkids.quizapp.quiz.test.EnglishHardActivity;
+import com.learningkids.quizapp.quiz.test.EnglishMediumActivity;
+import com.learningkids.quizapp.quiz.test.EnglishNormalActivity;
+import com.learningkids.quizapp.quiz.test.EnvHardActivity;
+import com.learningkids.quizapp.quiz.test.EnvMediumActivity;
+import com.learningkids.quizapp.quiz.test.EnvNormalActivity;
+import com.learningkids.quizapp.quiz.test.GkHardActivity;
+import com.learningkids.quizapp.quiz.test.GkMediumActivity;
+import com.learningkids.quizapp.quiz.test.GkNormalActivity;
 
 public class SelectScreen extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.learningkids.quizapp.test;
+package com.learningkids.quizapp.quiz.test;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -23,7 +23,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.learningkids.quizapp.helper.Question;
+import com.learningkids.quizapp.quiz.helper.Question;
 import com.learningkids.quizapp.R;
 import com.learningkids.quizapp.screen.ScoreActivity;
 
@@ -31,8 +31,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class GkHardActivity extends AppCompatActivity {
-
+public class EnglishMediumActivity extends AppCompatActivity {
     private TextView timerTextView, numIndicator, questionTextView;
     private Button option1, option2, option3, option4;
     private ImageView btnNext, btnBack , numimg, questionimg, bookimg,boardimg;
@@ -51,11 +50,9 @@ public class GkHardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test_activity);
 
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.primary));
         }
-
 
         FirebaseApp.initializeApp(this);
 
@@ -75,7 +72,7 @@ public class GkHardActivity extends AppCompatActivity {
         load = findViewById(R.id.load);
 
         questions = new ArrayList<>();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("Fourth").child("Gk4");
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Second").child("English2");
 
         loadQuestions();
 
@@ -86,7 +83,7 @@ public class GkHardActivity extends AppCompatActivity {
                     currentQuestionIndex--;
                     setQuestion(currentQuestionIndex);
                 } else {
-                    Toast.makeText(GkHardActivity.this, "Back To Home", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EnglishMediumActivity.this, "Back To Home", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -118,14 +115,14 @@ public class GkHardActivity extends AppCompatActivity {
                     questions = questions.subList(0, Math.min(15, questions.size()));
                     setQuestion(0);
                 } else {
-                    Toast.makeText(GkHardActivity.this, "No questions found.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EnglishMediumActivity.this, "No questions found.", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 hideProgressBar();
-                Toast.makeText(GkHardActivity.this, "Failed to load questions.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EnglishMediumActivity.this, "Failed to load questions.", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -250,7 +247,7 @@ public class GkHardActivity extends AppCompatActivity {
         option4.setVisibility(View.INVISIBLE);
         btnNext.setVisibility(View.INVISIBLE);
 
-        Intent intent = new Intent(GkHardActivity.this, ScoreActivity.class);
+        Intent intent = new Intent(EnglishMediumActivity.this, ScoreActivity.class);
         intent.putExtra("score", score);
         intent.putExtra("correctCount", correctCount);
         intent.putExtra("incorrectCount", incorrectCount);

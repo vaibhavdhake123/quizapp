@@ -10,14 +10,11 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: #5E96F6;
 }
 .wrapper{
   padding: 25px;
   border-radius: 10px;
-  background: #F8F8F8;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  background: #5E96F6;
 }
 .cards, .card, .view{
   display: flex;

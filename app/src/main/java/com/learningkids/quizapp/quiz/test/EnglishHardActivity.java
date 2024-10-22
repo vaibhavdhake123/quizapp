@@ -1,4 +1,4 @@
-package com.learningkids.quizapp.test;
+package com.learningkids.quizapp.quiz.test;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -23,7 +23,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.learningkids.quizapp.helper.Question;
+import com.learningkids.quizapp.quiz.helper.Question;
 import com.learningkids.quizapp.R;
 import com.learningkids.quizapp.screen.ScoreActivity;
 
@@ -31,8 +31,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+public class EnglishHardActivity extends AppCompatActivity {
 
-public class ArtNormalActivity extends AppCompatActivity {
     private TextView timerTextView, numIndicator, questionTextView;
     private Button option1, option2, option3, option4;
     private ImageView btnNext, btnBack , numimg, questionimg, bookimg,boardimg;
@@ -44,6 +44,7 @@ public class ArtNormalActivity extends AppCompatActivity {
     private int score = 0;
     private int correctCount = 0;
     private int incorrectCount = 0;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -74,7 +75,7 @@ public class ArtNormalActivity extends AppCompatActivity {
         load = findViewById(R.id.load);
 
         questions = new ArrayList<>();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("First").child("Art1");
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Fourth").child("English4");
 
         loadQuestions();
 
@@ -85,7 +86,7 @@ public class ArtNormalActivity extends AppCompatActivity {
                     currentQuestionIndex--;
                     setQuestion(currentQuestionIndex);
                 } else {
-                    Toast.makeText(ArtNormalActivity.this, "Back To Home", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EnglishHardActivity.this, "Back To Home", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -117,14 +118,14 @@ public class ArtNormalActivity extends AppCompatActivity {
                     questions = questions.subList(0, Math.min(15, questions.size()));
                     setQuestion(0);
                 } else {
-                    Toast.makeText(ArtNormalActivity.this, "No questions found.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EnglishHardActivity.this, "No questions found.", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 hideProgressBar();
-                Toast.makeText(ArtNormalActivity.this, "Failed to load questions.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EnglishHardActivity.this, "Failed to load questions.", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -249,7 +250,7 @@ public class ArtNormalActivity extends AppCompatActivity {
         option4.setVisibility(View.INVISIBLE);
         btnNext.setVisibility(View.INVISIBLE);
 
-        Intent intent = new Intent(ArtNormalActivity.this, ScoreActivity.class);
+        Intent intent = new Intent(EnglishHardActivity.this, ScoreActivity.class);
         intent.putExtra("score", score);
         intent.putExtra("correctCount", correctCount);
         intent.putExtra("incorrectCount", incorrectCount);

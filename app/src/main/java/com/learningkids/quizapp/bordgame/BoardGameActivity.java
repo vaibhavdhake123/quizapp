@@ -42,15 +42,15 @@ public class BoardGameActivity extends AppCompatActivity {
     public void load() {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
-        settings.setLoadWithOverviewMode(true);
+        settings.setLoadWithOverviewMode(false);
         settings.setUseWideViewPort(true);
-        settings.setSupportZoom(true);
-        settings.setBuiltInZoomControls(true);
+        settings.setSupportZoom(false);
+        settings.setBuiltInZoomControls(false);
         settings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
         settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
         settings.setDomStorageEnabled(true);
         webView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
-        webView.setScrollbarFadingEnabled(true);
+        webView.setScrollbarFadingEnabled(false);
 
         webView.setWebChromeClient(new WebChromeClient() {
         });

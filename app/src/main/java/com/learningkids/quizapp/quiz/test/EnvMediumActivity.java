@@ -1,4 +1,4 @@
-package com.learningkids.quizapp.test;
+package com.learningkids.quizapp.quiz.test;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -23,7 +23,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.learningkids.quizapp.helper.Question;
+import com.learningkids.quizapp.quiz.helper.Question;
 import com.learningkids.quizapp.R;
 import com.learningkids.quizapp.screen.ScoreActivity;
 
@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class GkNormalActivity extends AppCompatActivity {
+public class EnvMediumActivity extends AppCompatActivity {
 
     private TextView timerTextView, numIndicator, questionTextView;
     private Button option1, option2, option3, option4;
@@ -45,6 +45,7 @@ public class GkNormalActivity extends AppCompatActivity {
     private int correctCount = 0;
     private int incorrectCount = 0;
 
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +55,6 @@ public class GkNormalActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.primary));
         }
-
 
         FirebaseApp.initializeApp(this);
 
@@ -74,7 +74,7 @@ public class GkNormalActivity extends AppCompatActivity {
         load = findViewById(R.id.load);
 
         questions = new ArrayList<>();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("First").child("Gk1");
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Second").child("Envorment2");
 
         loadQuestions();
 
@@ -85,7 +85,7 @@ public class GkNormalActivity extends AppCompatActivity {
                     currentQuestionIndex--;
                     setQuestion(currentQuestionIndex);
                 } else {
-                    Toast.makeText(GkNormalActivity.this, "Back To Home", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EnvMediumActivity.this, "Back To Home", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -117,14 +117,14 @@ public class GkNormalActivity extends AppCompatActivity {
                     questions = questions.subList(0, Math.min(15, questions.size()));
                     setQuestion(0);
                 } else {
-                    Toast.makeText(GkNormalActivity.this, "No questions found.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EnvMediumActivity.this, "No questions found.", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 hideProgressBar();
-                Toast.makeText(GkNormalActivity.this, "Failed to load questions.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EnvMediumActivity.this, "Failed to load questions.", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -249,7 +249,7 @@ public class GkNormalActivity extends AppCompatActivity {
         option4.setVisibility(View.INVISIBLE);
         btnNext.setVisibility(View.INVISIBLE);
 
-        Intent intent = new Intent(GkNormalActivity.this, ScoreActivity.class);
+        Intent intent = new Intent(EnvMediumActivity.this, ScoreActivity.class);
         intent.putExtra("score", score);
         intent.putExtra("correctCount", correctCount);
         intent.putExtra("incorrectCount", incorrectCount);

@@ -3,7 +3,7 @@ package com.learningkids.quizapp.screen;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,8 +15,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.learningkids.quizapp.R;
-import com.learningkids.quizapp.bordgame.BoardGameActivity;
-import com.learningkids.quizapp.selecter.SelectScreen;
+import com.learningkids.quizapp.number.NumberActivity;
+import com.learningkids.quizapp.quiz.selecter.SelectScreen;
 import com.learningkids.quizapp.story.Constants;
 import com.learningkids.quizapp.story.Story;
 import com.learningkids.quizapp.story.StoryAdapter;
@@ -30,8 +30,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        CardView EngQ, EnvQ, GkQ, ArtQ;
-        ImageView BoardGame, Flip;
+        CardView EngQ, EnvQ, GkQ, ArtQ , num;
 
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
@@ -46,10 +45,10 @@ public class HomeActivity extends AppCompatActivity {
         EnvQ = findViewById(R.id.EnvQ);
         GkQ = findViewById(R.id.GKQ);
         ArtQ = findViewById(R.id.ArtQ);
-        BoardGame = findViewById(R.id.game);
-        Flip = findViewById(R.id.flip);
+        num = findViewById(R.id.number);
 
-        // Set up RecyclerView for stories
+
+
         ArrayList<Story> data = Constants.getStoryList();
         setAdapterRecyclerView(data);
 
@@ -59,11 +58,16 @@ public class HomeActivity extends AppCompatActivity {
         GkQ.setOnClickListener(v -> openCategorySelection("GK"));
         ArtQ.setOnClickListener(v -> openCategorySelection("Art"));
 
-        // BoardGame click listener (moved outside of setAdapterRecyclerView)
-        BoardGame.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, BoardGameActivity.class);
-            startActivity(intent);
+        num.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, NumberActivity.class);
+                startActivity(intent);
+            }
         });
+
+        // BoardGame click listener (moved outside of setAdapterRecyclerView)
+
     }
 
     private void openCategorySelection(String category) {
@@ -74,7 +78,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private void setAdapterRecyclerView(ArrayList<Story> data) {
         // Shuffle the data before setting the adapter
-//        Collections.shuffle(data);
+        //Collections.shuffle(data);
 
         // Set up RecyclerView with a horizontal LinearLayoutManager and StoryAdapter
         RecyclerView recyclerView = findViewById(R.id.rvStoryList);

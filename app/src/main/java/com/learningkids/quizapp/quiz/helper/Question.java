@@ -1,4 +1,4 @@
-package com.learningkids.quizapp.helper;
+package com.learningkids.quizapp.quiz.helper;
 
 public class Question {
         private String question;
