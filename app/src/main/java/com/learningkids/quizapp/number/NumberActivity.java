@@ -68,13 +68,14 @@ public class NumberActivity extends AppCompatActivity {
         numberImageView.setImageResource(images[currentIndex]);
 
         // Play button click listener
-        playButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!isPlaying) {
-                    isPlaying = true;
-                    playNextImage();
-                }
+        playButton.setOnClickListener(v -> {
+            if (!isPlaying) {
+                isPlaying = true;
+                playButton.setImageResource(R.drawable.pause); // Change to pause image
+                playNextImage();
+            } else {
+                isPlaying = false;
+                playButton.setImageResource(R.drawable.play); // Change to play image
             }
         });
 

@@ -11,6 +11,33 @@
     <string name="title8">The Ugly Duckling</string>
     <string name="title9">The Lion and the Poor Slave</string>
     <string name="title10">The Elephant and the Ants</string>
+
+    <string name="title11">The Fox and the Crow</string>
+    <string name="title12">The Two Goats</string>
+    <string name="title13">The Wind and the Sun</string>
+    <string name="title14">The Milkmaid and Her Pail</string>
+    <string name="title15">The Lion and the Mouse</string>
+    <string name="title16">The Dog and His Reflection</string>
+    <string name="title17">The Goose that Laid the Golden Eggs</string>
+    <string name="title18">The Bear and the Beehive</string>
+    <string name="title19">The Little Red Hen</string>
+    <string name="title20">The Farmer and His Sons</string>
+    <string name="title21">The Cat and the Mice</string>
+    <string name="title22">The Frog and the Ox</string>
+    <string name="title23">The Honest Woodcutter</string>
+    <string name="title24">The Stag at the Pool</string>
+    <string name="title25">The Tortoise and the Eagle</string>
+
+
+
+
+
+
+
+
+
+
+
     <string name="story1">There was once a hare who was friends with a tortoise. One day, he challenged the tortoise to a race. Seeing how slow the tortoise was going, the hare thought he’ll win this easily. So he took a nap while the tortoise kept on going. When the hare woke up, he saw that the tortoise was already at the finish line. Much to his chagrin, the tortoise won the race while he was busy sleeping.</string>
     <string name="story2">Once there was a dog who wandered the streets night and day in search of food. One day, he found a big juicy bone and he immediately grabbed it between his mouth and took it home. On his way home, he crossed a river and saw another dog who also had a bone in its mouth. He wanted that bone for himself too. But as he opened his mouth, the bone he was biting fell into the river and sank. That night, he went home hungry.</string>
     <string name="story3">After flying a long distance, a thirsty crow was wandering the forest in search of water. Finally, he saw a pot half-filled with water. He tried to drink from it but his beak wasn’t long enough to reach the water inside. He then saw pebbles on the ground and one by one, he put them in the pot until the water rose to the brim. The crow then hastily drank from it and quenched his thirst.</string>
@@ -21,6 +48,33 @@
     <string name="story8">Most of us have probably heard of this story as this is one of the most popular fairy tales in the world. The story revolves around a duckling who from the moment of his birth has always felt different from his siblings. He was always picked on because he didn’t look like the rest of them. One day, he had enough and ran away from the pond he grew up in. He wandered near and far looking for a family who would accept him. Months passed and seasons changed but everywhere he went, nobody wanted him because he was such an ugly duck. Then one day, he came upon a family of swans. Upon looking at them, he realized that during the months he spent looking for a family to call his own, he had grown into a beautiful swan. Now he finally understood why he never looked like the rest of his siblings because he isn’t a duck but a swan.</string>
     <string name="story9">There was once a slave who was treated cruelly by his master. One day, he couldn’t take it anymore and ran away to the forest to escape. There he chanced upon a lion who couldn’t walk because of the thorn in its paw. Although he’s scared, the slave mustered his courage and took out the thorn in the lion’s paw. When the lion was finally free of the thorn, he ran into the forest and didn’t harm the slave. Sometime later, the slave was caught by his master along with some animals in the forest. The master then ordered the slave to be thrown into the lion’s den. When the slave saw the lion, he recognized it as the same lion he helped in the forest. The slave was able to escape the den unharmed and he freed all the other animals.</string>
     <string name="story10">There was once a proud elephant who always bullied smaller animals. He would go to the anthill near his home and spray water at the ants. The ants, with their size, could do nothing but cry. The elephant just laughed and threatened the ants that he would crush them to death. One day, the ants had enough and decided to teach the elephant a lesson. They went straight into the elephant’s trunk and started biting him. The elephant could only howl in pain. He realized his mistake and apologized to the ants and all the animals he bullied.</string>
+
+    <string name="story11">Once upon a time, a hungry crow saw a piece of cheese on a windowsill. A sly fox saw the crow with the cheese and devised a plan. He complimented the crows beauty and asked her to sing. Flattered, the crow opened her mouth to sing, dropping the cheese. The fox snatched it up and ran away, teaching the crow to be wary of flattery.</string>
+    <string name="story12">Two goats were crossing a narrow bridge from opposite sides. Neither would back down, and they started to fight. As they pushed against each other, they both fell into the river below. The moral is that sometimes compromise is better than pride.</string>
+    <string name="story13">The wind and the sun had a contest to see who could make a traveler remove his coat. The wind blew fiercely, but the traveler held on tightly. The sun then shone warmly, and the traveler willingly took off his coat. The moral is that gentleness often prevails over force.</string>
+    <string name="story14">A milkmaid was on her way to the market with a pail of milk. She daydreamed about the fortune she would make and how she would buy new dresses and marry a wealthy man. In her excitement, she accidentally spilled the milk, realizing that her dreams were only castles in the air. The moral is to not count your chickens before they hatch.</string>
+    <string name="story15">A mouse helped a lion caught in a net. The lion laughed at the mouses small size but appreciated the help. Later, the lion was caught by hunters, and the mouse chewed the ropes to free him. The moral is that no act of kindness, no matter how small, is ever wasted.</string>
+    <string name="story16">A dog saw his reflection in a pond and thought it was another dog with a bigger piece of meat. He jumped to grab it, losing the meat he already had. The moral is that greed can lead to losing what you already possess.</string>
+    <string name="story17">A farmer had a goose that laid a golden egg every day. Wanting more wealth, he killed the goose, only to find it was just an ordinary goose inside. The moral is that greed can destroy what you have.</string>
+    <string name="story18">A bear stumbled upon a beehive and tried to get honey. He was stung repeatedly and ran away in pain. The moral is that one should not provoke others for personal gain.</string>
+    <string name="story19">The little red hen found some wheat and decided to make bread. She asked for help from the other animals, but none wanted to assist. After she baked the bread, she enjoyed it all by herself. The moral is that those who do not help should not expect to benefit.</string>
+    <string name="story20">A farmer had three sons who quarreled often. He decided to teach them a lesson by asking them to break a bundle of sticks. They could not break it together, but when he untied the bundle, they easily broke each stick one by one. The moral is that unity is strength.</string>
+    <string name="story21">A cat was tired of sharing her food with mice. She devised a plan to trap them. However, when the mice realized the trap, they banded together and outsmarted the cat. The moral is that teamwork can overcome challenges.</string>
+    <string name="story22">A frog saw an ox and wanted to be as big as him. He puffed himself up, but exploded in the process. The moral is to be content with who you are.</string>
+    <string name="story23">A woodcutter accidentally dropped his axe into a river. A fairy appeared and offered him a golden axe, but he refused, wanting his old axe back. The fairy admired his honesty and returned his axe. The moral is that honesty is the best policy.</string>
+    <string name="story24">A stag was drinking from a pool and saw his reflection. He was proud of his antlers but ashamed of his legs. When hunters chased him, his antlers got caught in the branches, and he could escape. The moral is that pride can lead to downfall.</string>
+    <string name="story25">A tortoise envied an eagle ability to fly. He begged the eagle to take him up in the sky. The eagle obliged, but when he released the tortoise, he fell and learned to appreciate his own strengths. The moral is that each of us has unique gifts that should be valued.</string>
+
+
+
+
+
+
+
+
+
+
+
     <string name="moral1">There are actually a couple of moral lessons we can learn from this story. The hare teaches that overconfidence can sometimes ruin you. While the tortoise teaches us about the power of perseverance. Even if all the odds are stacked against you, never give up. Sometimes life is not about who’s the fastest or the strongest, it’s about who is the most consistent.</string>
     <string name="moral2">If we always envy what others have, we’ll end up losing what we already have, just like the greedy dog.</string>
     <string name="moral3">If there’s a will, there’s a way. Every problem has a solution if we just look hard enough and don’t give up.</string>
@@ -31,5 +85,21 @@
     <string name="moral8">We shouldn’t be too quick to judge others based on their physical appearance. Just because someone doesn’t fit societal definitions of beauty doesn’t mean they’re ugly. Each of us is beautiful in our own unique way and it’s time we accept and celebrate that individuality.</string>
     <string name="moral9">The good you did will always have a way of coming back to you. So do good deeds and be kind to others and the world will be kind to you.</string>
     <string name="moral10">Be humble and treat everyone with kindness. If you think you’re stronger than others, then use your strength to protect them instead of harming them.</string>
+
+    <string name="moral11">Flattery can lead to loss, so be cautious of those who praise you too much.</string>
+    <string name="moral12">Pride can prevent resolution; compromise is sometimes necessary.</string>
+    <string name="moral13">Gentleness can achieve what force cannot.</string>
+    <string name="moral14">Do not get lost in daydreams; focus on the present.</string>
+    <string name="moral15">Kindness is never wasted, regardless of the size of the gesture.</string>
+    <string name="moral16">Greed can result in losing what you already have.</string>
+    <string name="moral17">Greed can destroy even the greatest of fortunes.</string>
+    <string name="moral18">Provoking others for gain can backfire.</string>
+    <string name="moral19">Those who do not contribute should not expect to receive.</string>
+    <string name="moral20">Unity and teamwork can overcome any challenge.</string>
+    <string name="moral21">Teamwork is essential to success.</string>
+    <string name="moral22">Contentment is key to happiness.</string>
+    <string name="moral23">Honesty can bring unexpected rewards.</string>
+    <string name="moral24">Pride in appearance can lead to downfall; true value lies within.</string>
+    <string name="moral25">Everyone has unique strengths; appreciate your own gifts.</string>
 
 </resources>

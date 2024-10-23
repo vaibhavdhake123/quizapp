@@ -15,10 +15,10 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".number.NumberActivity"
+            android:name=".letter.LetterActivity"
             android:exported="false" />
         <activity
-            android:name=".filpgame.FlipGameActivity"
+            android:name=".number.NumberActivity"
             android:exported="false" />
         <activity
             android:name=".bordgame.BoardGameActivity"

@@ -2,11 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:background="@drawable/bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screen.StoryActivity">
+    android:background="@drawable/bg">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -26,13 +24,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/storyImage"
                 android:layout_width="match_parent"
-                android:layout_height="175dp"
+                android:layout_height="200dp"
                 android:contentDescription="Image"
                 android:scaleType="fitXY"
                 app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
 
         </FrameLayout>
 
@@ -41,25 +41,22 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardView"> <!-- Adjusted constraint reference -->
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginTop="8dp"
             android:layout_margin="8dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="30dp"
-            android:background="@color/white"
-            android:backgroundTint="@color/white"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="4dp">
+            android:layout_marginEnd="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -70,64 +67,54 @@
                     android:id="@+id/tvStoryTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="12dp"
                     android:gravity="center"
+                    android:layout_marginTop="10dp"
                     android:text=""
+                    android:textSize="28sp"
                     android:textColor="@color/primary"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/tvStory"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="8dp"
                     android:textColor="@color/black"
+                    tools:text=""
                     android:textSize="22sp"
-                    android:textStyle="bold"
-                    tools:text="" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:gravity="center"
+                    android:layout_marginTop="10dp"
                     android:text="Moral of Story"
+                    android:textSize="28sp"
                     android:textColor="@color/primary"
-                    android:textSize="24sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/tvMoral"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginEnd="20dp"
-                    android:textColor="@color/black"
+                    tools:text=""
                     android:textSize="22sp"
-                    tools:text="" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"/>
-
-
+                    android:textColor="@color/black" />
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     </ScrollView>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="75dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
@@ -136,5 +123,6 @@
             android:layout_height="match_parent"
             android:src="@drawable/play" />
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

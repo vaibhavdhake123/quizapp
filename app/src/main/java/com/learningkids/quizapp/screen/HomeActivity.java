@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.learningkids.quizapp.R;
+import com.learningkids.quizapp.bordgame.BoardGameActivity;
+import com.learningkids.quizapp.letter.LetterActivity;
 import com.learningkids.quizapp.number.NumberActivity;
 import com.learningkids.quizapp.quiz.selecter.SelectScreen;
 import com.learningkids.quizapp.story.Constants;
@@ -22,15 +24,18 @@ import com.learningkids.quizapp.story.Story;
 import com.learningkids.quizapp.story.StoryAdapter;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class HomeActivity extends AppCompatActivity {
+    private ArrayList<Story> originalStoryList;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        CardView EngQ, EnvQ, GkQ, ArtQ , num;
+        CardView EngQ, EnvQ, GkQ, ArtQ , num, letter, game;
+
 
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
@@ -46,11 +51,13 @@ public class HomeActivity extends AppCompatActivity {
         GkQ = findViewById(R.id.GKQ);
         ArtQ = findViewById(R.id.ArtQ);
         num = findViewById(R.id.number);
+        letter = findViewById(R.id.letter);
+        game = findViewById(R.id.game);
 
 
 
-        ArrayList<Story> data = Constants.getStoryList();
-        setAdapterRecyclerView(data);
+        originalStoryList = Constants.getStoryList(); // Store the original list
+        setAdapterRecyclerView(originalStoryList);
 
         // Set click listeners for category buttons
         EngQ.setOnClickListener(v -> openCategorySelection("English"));
@@ -66,7 +73,22 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        // BoardGame click listener (moved outside of setAdapterRecyclerView)
+        letter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, LetterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        game.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, BoardGameActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
@@ -77,22 +99,28 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void setAdapterRecyclerView(ArrayList<Story> data) {
-        // Shuffle the data before setting the adapter
-        //Collections.shuffle(data);
+        // Shuffle the data for display
+        ArrayList<Story> shuffledData = new ArrayList<>(data);
+        Collections.shuffle(shuffledData);
 
-        // Set up RecyclerView with a horizontal LinearLayoutManager and StoryAdapter
+        // Set up RecyclerView
         RecyclerView recyclerView = findViewById(R.id.rvStoryList);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(layoutManager);
 
-        StoryAdapter adapter = new StoryAdapter(data);
+        StoryAdapter adapter = new StoryAdapter(shuffledData);
         recyclerView.setAdapter(adapter);
 
         // Handle item click events for stories
         adapter.setOnClickListener(position -> {
+            // Get the original story position based on the clicked position
+            Story selectedStory = shuffledData.get(position);
+            int originalPosition = originalStoryList.indexOf(selectedStory); // Find the original position
+
             Intent intent = new Intent(HomeActivity.this, StoryActivity.class);
-            intent.putExtra("position", position);
+            intent.putExtra("position", originalPosition); // Pass the original position
             startActivity(intent);
         });
     }
 }
+
