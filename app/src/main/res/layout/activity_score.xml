@@ -8,30 +8,28 @@
     android:background="@drawable/bg"
     tools:context=".screen.ScoreActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="222dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/timesbold"
-        android:gravity="center"
-        android:text="Result"
-        android:textColor="@color/question"
-        android:textSize="35sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="298dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/resultbg"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <ImageView
         android:id="@+id/Rimg"
         android:layout_width="150dp"
         android:layout_height="130dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/ic_launcher_foreground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
@@ -198,14 +196,14 @@
 
     <ImageView
         android:id="@+id/Home"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="99dp"
+        android:layout_height="87dp"
         android:src="@drawable/home"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView4"/>
-
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
