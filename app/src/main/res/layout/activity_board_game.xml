@@ -43,6 +43,18 @@
             app:lottie_loop="true"
             app:lottie_rawRes="@raw/load" />
 
+
     </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-4239824831134096/3807593153" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

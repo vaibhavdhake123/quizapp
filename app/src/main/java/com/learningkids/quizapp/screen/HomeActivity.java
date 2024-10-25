@@ -1,9 +1,13 @@
 package com.learningkids.quizapp.screen;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +18,10 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.learningkids.quizapp.R;
 import com.learningkids.quizapp.bordgame.BoardGameActivity;
 import com.learningkids.quizapp.letter.LetterActivity;
@@ -28,6 +36,7 @@ import java.util.Collections;
 
 public class HomeActivity extends AppCompatActivity {
     private ArrayList<Story> originalStoryList;
+    private InterstitialAd mInterstitialAd;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -45,6 +54,17 @@ public class HomeActivity extends AppCompatActivity {
             return insets;
         });
 
+        if (!isNetworkAvailable()) {
+            Toast.makeText(this, "No Internet connection. Please turn on your internet.", Toast.LENGTH_LONG).show();
+        }
+
+
+        new Thread(
+                () -> {
+                    MobileAds.initialize(this, initializationStatus -> {});
+                })
+                .start();
+
         // Initialize Views
         EngQ = findViewById(R.id.EnglishQ);
         EnvQ = findViewById(R.id.EnvQ);
@@ -54,6 +74,11 @@ public class HomeActivity extends AppCompatActivity {
         letter = findViewById(R.id.letter);
         game = findViewById(R.id.game);
 
+        AdView adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
+//        loadInterstitialAd();
 
 
         originalStoryList = Constants.getStoryList(); // Store the original list
@@ -92,7 +117,14 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
+
     private void openCategorySelection(String category) {
+//        showInterstitialAd();
         Intent intent = new Intent(HomeActivity.this, SelectScreen.class);
         intent.putExtra("category", category);
         startActivity(intent);
@@ -122,5 +154,63 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
+//    private void loadInterstitialAd() {
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//
+//        // Replace "ca-app-pub-3940256099942544/1033173712" with your real Ad Unit ID
+//        InterstitialAd.load(this, "ca-app-pub-3940256099942544/1033173712", adRequest,
+//                new InterstitialAdLoadCallback() {
+//                    @Override
+//                    public void onAdLoaded(InterstitialAd interstitialAd) {
+//                        // The interstitial ad was loaded successfully
+//                        mInterstitialAd = interstitialAd;
+//                        setupFullScreenCallback();
+//                    }
+//
+//                    @Override
+//                    public void onAdFailedToLoad(LoadAdError adError) {
+//                        // Handle the error
+//                        mInterstitialAd = null;
+//                    }
+//                });
+//    }
+//
+//    // Method to show the Interstitial Ad when it's loaded
+//    private void showInterstitialAd() {
+//        if (mInterstitialAd != null) {
+//            mInterstitialAd.show(this);
+//        } else {
+//            // If the ad is not ready, you might want to load it again
+//            loadInterstitialAd();
+//        }
+//    }
+//
+//    // Optional: Handle Ad Events
+//    private void setupFullScreenCallback() {
+//        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
+//            @Override
+//            public void onAdDismissedFullScreenContent() {
+//                // Called when the ad is dismissed.
+//                mInterstitialAd = null;
+//                // Load another ad for future
+//                loadInterstitialAd();
+//            }
+//
+//            @Override
+//            public void onAdFailedToShowFullScreenContent(com.google.android.gms.ads.AdError adError) {
+//                // Called when ad fails to show
+//                mInterstitialAd = null;
+//            }
+//
+//            @Override
+//            public void onAdShowedFullScreenContent() {
+//                // Called when ad is shown
+//                mInterstitialAd = null;
+//            }
+//        });
+//    }
+
+
 }
 

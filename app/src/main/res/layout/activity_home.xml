@@ -26,15 +26,36 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profile_image"
-                android:layout_width="100dp"
-                android:layout_height="75dp"
-                android:layout_gravity="left"
-                android:layout_marginTop="0dp"
-                android:src="@drawable/student"
-                app:civ_border_color="#FF000000"
-                app:civ_border_width="2dp" />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_gravity="center">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/profile_image"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:layout_gravity="left"
+                   android:layout_marginTop="0dp"
+                   android:src="@drawable/profile"
+                   app:civ_border_color="#FF000000"
+                   app:civ_border_width="0.1dp" />
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginStart="10dp"
+                   android:fontFamily="@font/dynabold"
+                   android:text="HELLO"
+                   android:textColor="@color/question"
+                   android:textSize="28sp"
+                   android:letterSpacing="0.09"
+                   android:textStyle="bold" />
+
+           </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
@@ -89,8 +110,6 @@
 
             </LinearLayout>
 
-
-
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
@@ -106,6 +125,16 @@
                     tools:listitem="@layout/item_list" />
 
             </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-4239824831134096/3807593153" />
 
             <LinearLayout
                 android:id="@+id/linearLayout5"
@@ -134,25 +163,28 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/bgcard"
                             android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:src="@drawable/englishicon"
-                                android:scaleType="fitCenter" />
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/englishicon" />
+
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom|center"
-                                android:fontFamily="@font/timesbold"
+                                android:fontFamily="@font/dynat"
+                                android:letterSpacing="0.1"
                                 android:gravity="center"
                                 android:text="English"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
                                 android:textSize="20sp"
-                                android:textStyle="bold" />
+                                />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
@@ -169,6 +201,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/bgcard"
                             android:orientation="vertical">
 
                             <ImageView
@@ -182,10 +215,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom|center"
-                                android:fontFamily="@font/timesbold"
+                                android:fontFamily="@font/dynat"
+                                android:letterSpacing="0.1"
                                 android:gravity="center"
                                 android:text="Environment"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -212,6 +246,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/bgcard"
                             android:orientation="vertical">
 
                             <ImageView
@@ -225,10 +260,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom|center"
-                                android:fontFamily="@font/timesbold"
+                                android:fontFamily="@font/dynat"
+                                android:letterSpacing="0.1"
                                 android:gravity="center"
                                 android:text="Gk"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -247,6 +283,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/bgcard"
                             android:orientation="vertical">
 
                             <ImageView
@@ -260,10 +297,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom|center"
-                                android:fontFamily="@font/timesbold"
+                                android:fontFamily="@font/dynat"
+                                android:letterSpacing="0.1"
                                 android:gravity="center"
                                 android:text="Art"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -303,13 +341,9 @@
                             android:scaleType="fitXY"
                             android:src="@drawable/gamebg"
                             app:shapeAppearanceOverlay="@style/RoundedImageView" />
-
                     </FrameLayout>
                 </androidx.cardview.widget.CardView>
-
             </LinearLayout>
-
-
         </LinearLayout>
     </ScrollView>
 

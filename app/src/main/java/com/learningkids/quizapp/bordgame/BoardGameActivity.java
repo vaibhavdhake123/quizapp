@@ -15,6 +15,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.learningkids.quizapp.R;
 
 public class BoardGameActivity extends AppCompatActivity {
@@ -32,11 +35,24 @@ public class BoardGameActivity extends AppCompatActivity {
             return insets;
         });
 
+        new Thread(
+                () -> {
+                    MobileAds.initialize(this, initializationStatus -> {});
+                })
+                .start();
+
+
+        AdView adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
+
         webView = findViewById(R.id.webview);
         lottieAnimationView = findViewById(R.id.lottie_animation);
 
         load();
         setDesktopMode(webView, true);
+
     }
 
     public void load() {

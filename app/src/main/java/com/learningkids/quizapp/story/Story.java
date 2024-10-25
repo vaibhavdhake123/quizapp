@@ -8,12 +8,11 @@ public class Story {
     private int image2; // Optional, depending on your use case
 
     // Constructor
-    public Story(int title, int story, int moral, int image, int image2) {
+    public Story(int title, int story, int moral, int image) {
         this.title = title;
         this.story = story;
         this.moral = moral;
         this.image = image;
-        this.image2 = image2;
     }
 
     // Getters
@@ -33,7 +32,4 @@ public class Story {
         return image;
     }
 
-    public int getImage2() {
-        return image2;
-    }
 }

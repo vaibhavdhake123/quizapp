@@ -1,5 +1,6 @@
 package com.learningkids.quizapp.number;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.view.View;
@@ -11,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.learningkids.quizapp.R;
 
 import java.util.Locale;
@@ -35,6 +38,7 @@ public class NumberActivity extends AppCompatActivity {
     private TextToSpeech textToSpeech;
     private boolean isPlaying = false;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +49,11 @@ public class NumberActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        AdView adView = findViewById(R.id.adViewNumber);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
 
         numberImageView = findViewById(R.id.numberimg);
         playButton = findViewById(R.id.PlayButton);

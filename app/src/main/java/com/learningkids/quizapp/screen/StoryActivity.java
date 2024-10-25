@@ -23,6 +23,7 @@ public class StoryActivity extends AppCompatActivity implements TextToSpeech.OnI
 
     private TextToSpeech textToSpeech;
     private ImageView btnPlay;
+    private boolean isPlaying = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +38,11 @@ public class StoryActivity extends AppCompatActivity implements TextToSpeech.OnI
             return insets;
         });
 
-        // Initialize Views
         ImageView storyImage = findViewById(R.id.storyImage);
         TextView tvStoryTitle = findViewById(R.id.tvStoryTitle);
         TextView tvStory = findViewById(R.id.tvStory);
         TextView tvMoral = findViewById(R.id.tvMoral);
-        btnPlay = findViewById(R.id.btnPlay); // Use the class-level variable
+        btnPlay = findViewById(R.id.btnPlay);
 
         // Get the intent and retrieve the position of the selected story
         int position = getIntent().getIntExtra("position", 0);
@@ -59,39 +59,57 @@ public class StoryActivity extends AppCompatActivity implements TextToSpeech.OnI
         // Set up TextToSpeech
         textToSpeech = new TextToSpeech(this, this);
 
-        // Set the onClick listener for the play button
+        // Set the onClick listener for the play/pause button
         btnPlay.setOnClickListener(v -> {
-            String storyText = tvStory.getText().toString();
-            String moralText = tvMoral.getText().toString();
+            if (isPlaying) {
+                // If already playing, stop and change button to play
+                textToSpeech.stop();
+                btnPlay.setImageResource(R.drawable.play); // Set the play image
+                isPlaying = false;
+            } else {
+                // If not playing, start speech and change button to pause
+                String storyText = tvStory.getText().toString();
+                String moralText = tvMoral.getText().toString();
 
-            // Set up the utterance progress listener
-            textToSpeech.setOnUtteranceProgressListener(new UtteranceProgressListener() {
-                @Override
-                public void onStart(String utteranceId) {
-                    // Optional: handle when speech starts
-                }
-
-                @Override
-                public void onDone(String utteranceId) {
-                    if ("story".equals(utteranceId)) {
-                        // Speak the moral after the story is done
-                        String moralPrompt = "Moral of the story: " + moralText;
-                        HashMap<String, String> params = new HashMap<>();
-                        params.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "moral");
-                        textToSpeech.speak(moralPrompt, TextToSpeech.QUEUE_FLUSH, params);
+                // Set up the utterance progress listener
+                textToSpeech.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+                    @Override
+                    public void onStart(String utteranceId) {
+                        // Optional: handle when speech starts
                     }
-                }
 
-                @Override
-                public void onError(String utteranceId) {
-                    // Optional: handle errors
-                }
-            });
+                    @Override
+                    public void onDone(String utteranceId) {
+                        if ("story".equals(utteranceId)) {
+                            // Speak the moral after the story is done
+                            String moralPrompt = "Moral of the story: " + moralText;
+                            HashMap<String, String> params = new HashMap<>();
+                            params.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "moral");
+                            textToSpeech.speak(moralPrompt, TextToSpeech.QUEUE_FLUSH, params);
+                        } else if ("moral".equals(utteranceId)) {
+                            runOnUiThread(() -> {
+                                // Change button back to play when done
+                                btnPlay.setImageResource(R.drawable.play);
+                                isPlaying = false;
+                            });
+                        }
+                    }
 
-            // Speak the story
-            HashMap<String, String> params = new HashMap<>();
-            params.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "story");
-            textToSpeech.speak(storyText, TextToSpeech.QUEUE_FLUSH, params);
+                    @Override
+                    public void onError(String utteranceId) {
+                        // Optional: handle errors
+                    }
+                });
+
+                // Speak the story
+                HashMap<String, String> params = new HashMap<>();
+                params.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "story");
+                textToSpeech.speak(storyText, TextToSpeech.QUEUE_FLUSH, params);
+
+                // Change button to pause and update state
+                btnPlay.setImageResource(R.drawable.pause); // Set the pause image
+                isPlaying = true;
+            }
         });
     }
 
