@@ -7,6 +7,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -20,8 +21,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.learningkids.quizapp.R;
 import com.learningkids.quizapp.bordgame.BoardGameActivity;
 import com.learningkids.quizapp.letter.LetterActivity;
@@ -44,6 +48,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         CardView EngQ, EnvQ, GkQ, ArtQ , num, letter, game;
+        ImageView PrivacyPolicy;
 
 
         EdgeToEdge.enable(this);
@@ -73,12 +78,13 @@ public class HomeActivity extends AppCompatActivity {
         num = findViewById(R.id.number);
         letter = findViewById(R.id.letter);
         game = findViewById(R.id.game);
+        PrivacyPolicy =findViewById(R.id.privacypolicy);
 
         AdView adView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
 
-//        loadInterstitialAd();
+        loadInterstitialAd();
 
 
         originalStoryList = Constants.getStoryList(); // Store the original list
@@ -114,6 +120,16 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        PrivacyPolicy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String Uri = "https://pawsomecreation.blogspot.com/";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(android.net.Uri.parse(Uri));
+                startActivity(intent);
+            }
+        });
+
 
     }
 
@@ -124,7 +140,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void openCategorySelection(String category) {
-//        showInterstitialAd();
+        showInterstitialAd();
         Intent intent = new Intent(HomeActivity.this, SelectScreen.class);
         intent.putExtra("category", category);
         startActivity(intent);
@@ -155,61 +171,61 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
-//    private void loadInterstitialAd() {
-//        AdRequest adRequest = new AdRequest.Builder().build();
-//
-//        // Replace "ca-app-pub-3940256099942544/1033173712" with your real Ad Unit ID
-//        InterstitialAd.load(this, "ca-app-pub-3940256099942544/1033173712", adRequest,
-//                new InterstitialAdLoadCallback() {
-//                    @Override
-//                    public void onAdLoaded(InterstitialAd interstitialAd) {
-//                        // The interstitial ad was loaded successfully
-//                        mInterstitialAd = interstitialAd;
-//                        setupFullScreenCallback();
-//                    }
-//
-//                    @Override
-//                    public void onAdFailedToLoad(LoadAdError adError) {
-//                        // Handle the error
-//                        mInterstitialAd = null;
-//                    }
-//                });
-//    }
-//
-//    // Method to show the Interstitial Ad when it's loaded
-//    private void showInterstitialAd() {
-//        if (mInterstitialAd != null) {
-//            mInterstitialAd.show(this);
-//        } else {
-//            // If the ad is not ready, you might want to load it again
-//            loadInterstitialAd();
-//        }
-//    }
-//
-//    // Optional: Handle Ad Events
-//    private void setupFullScreenCallback() {
-//        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
-//            @Override
-//            public void onAdDismissedFullScreenContent() {
-//                // Called when the ad is dismissed.
-//                mInterstitialAd = null;
-//                // Load another ad for future
-//                loadInterstitialAd();
-//            }
-//
-//            @Override
-//            public void onAdFailedToShowFullScreenContent(com.google.android.gms.ads.AdError adError) {
-//                // Called when ad fails to show
-//                mInterstitialAd = null;
-//            }
-//
-//            @Override
-//            public void onAdShowedFullScreenContent() {
-//                // Called when ad is shown
-//                mInterstitialAd = null;
-//            }
-//        });
-//    }
+    private void loadInterstitialAd() {
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        // Replace "ca-app-pub-3940256099942544/1033173712" with your real Ad Unit ID
+        InterstitialAd.load(this, "ca-app-pub-4239824831134096/4684767960", adRequest,
+                new InterstitialAdLoadCallback() {
+                    @Override
+                    public void onAdLoaded(InterstitialAd interstitialAd) {
+                        // The interstitial ad was loaded successfully
+                        mInterstitialAd = interstitialAd;
+                        setupFullScreenCallback();
+                    }
+
+                    @Override
+                    public void onAdFailedToLoad(LoadAdError adError) {
+                        // Handle the error
+                        mInterstitialAd = null;
+                    }
+                });
+    }
+
+    // Method to show the Interstitial Ad when it's loaded
+    private void showInterstitialAd() {
+        if (mInterstitialAd != null) {
+            mInterstitialAd.show(this);
+        } else {
+            // If the ad is not ready, you might want to load it again
+            loadInterstitialAd();
+        }
+    }
+
+    // Optional: Handle Ad Events
+    private void setupFullScreenCallback() {
+        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
+            @Override
+            public void onAdDismissedFullScreenContent() {
+                // Called when the ad is dismissed.
+                mInterstitialAd = null;
+                // Load another ad for future
+                loadInterstitialAd();
+            }
+
+            @Override
+            public void onAdFailedToShowFullScreenContent(com.google.android.gms.ads.AdError adError) {
+                // Called when ad fails to show
+                mInterstitialAd = null;
+            }
+
+            @Override
+            public void onAdShowedFullScreenContent() {
+                // Called when ad is shown
+                mInterstitialAd = null;
+            }
+        });
+    }
 
 
 }

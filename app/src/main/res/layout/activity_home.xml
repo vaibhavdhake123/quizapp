@@ -26,36 +26,45 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:orientation="horizontal"
-               android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
 
-               <de.hdodenhof.circleimageview.CircleImageView
-                   android:id="@+id/profile_image"
-                   android:layout_width="50dp"
-                   android:layout_height="50dp"
-                   android:layout_gravity="left"
-                   android:layout_marginTop="0dp"
-                   android:src="@drawable/profile"
-                   app:civ_border_color="#FF000000"
-                   app:civ_border_width="0.1dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="0.1dp" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/dynabold"
+                    android:text="HELLO"
+                    android:textColor="@color/question"
+                    android:textSize="28sp"
+                    android:letterSpacing="0.09"
+                    android:textStyle="bold" />
 
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center"
-                   android:layout_marginStart="10dp"
-                   android:fontFamily="@font/dynabold"
-                   android:text="HELLO"
-                   android:textColor="@color/question"
-                   android:textSize="28sp"
-                   android:letterSpacing="0.09"
-                   android:textStyle="bold" />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
 
-           </LinearLayout>
+                <ImageView
+                    android:id="@+id/privacypolicy"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/legal" />
+
+            </LinearLayout>
+
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
@@ -130,7 +139,7 @@
                 xmlns:ads="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/adView"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_gravity="center"
                 ads:adSize="BANNER"
