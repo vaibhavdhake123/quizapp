@@ -2,7 +2,8 @@
 
 This is an educational Android application designed to provide a fun and interactive way for students from grades 1 to 4 to learn various subjects. The app includes quizzes on different subjects such as English, Environment, General Knowledge (GK), and Art. The project is built using Java and Firebase, providing a robust backend for data storage and management.
 
-![Kids Learning App - Quiz](https://github.com/vaibhavdhake123/quizapp/assets/143077217/c4207bfc-f060-4ed1-91a4-fbce5fac5494)
+![20240920_095428](https://github.com/user-attachments/assets/c5e7667a-023b-4812-bc0e-74b11d142829)
+
 
 ## Features
 
