@@ -12,8 +12,8 @@ android {
         applicationId = "com.learningkids.quizapp"
         minSdk = 24
         targetSdk = 34
-        versionCode = 3
-        versionName = "OB12"
+        versionCode = 5
+        versionName = "OB13"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -18,7 +18,7 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.splash_screen);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.white));
+            getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.toolbar));
         }
 
         new Handler().postDelayed(new Runnable() {

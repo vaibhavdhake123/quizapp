@@ -27,31 +27,32 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class HomeActivity extends AppCompatActivity {
+
     private ArrayList<Story> originalStoryList;
+    CardView EngQ, GkQ, ArtQ , num, letter, game;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        CardView EngQ, EnvQ, GkQ, ArtQ , num, letter, game;
-
-
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        // Initialize Views
-        EngQ = findViewById(R.id.EnglishQ);
-        EnvQ = findViewById(R.id.EnvQ);
-        GkQ = findViewById(R.id.GKQ);
-        ArtQ = findViewById(R.id.ArtQ);
+
+
+        EngQ = findViewById(R.id.english);
+        GkQ = findViewById(R.id.gk);
+        ArtQ = findViewById(R.id.art);
         num = findViewById(R.id.number);
-        letter = findViewById(R.id.letter);
+        letter = findViewById(R.id.abc);
         game = findViewById(R.id.game);
 
 
@@ -59,9 +60,7 @@ public class HomeActivity extends AppCompatActivity {
         originalStoryList = Constants.getStoryList(); // Store the original list
         setAdapterRecyclerView(originalStoryList);
 
-        // Set click listeners for category buttons
         EngQ.setOnClickListener(v -> openCategorySelection("English"));
-        EnvQ.setOnClickListener(v -> openCategorySelection("Environment"));
         GkQ.setOnClickListener(v -> openCategorySelection("GK"));
         ArtQ.setOnClickListener(v -> openCategorySelection("Art"));
 
